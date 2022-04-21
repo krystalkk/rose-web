@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="body">
+        <div class="qa-box">
+            <div>
+                <input class="qa-inputer" placeholder="Please enter a question with YES or NO answer" />
+                <button class="qa-enter">Enter</button>
+            </div>
+            <p>The answer is: <span class="answer">-</span></p>
+        </div>
+    </div>
+    <script src="./flower.js"></script>
+    <script>
+        window.onload = function() {
+            document.querySelector('.qa-enter').addEventListener('click', function(e) {
+                const flowerEl = document.querySelector('.flower-box');
+                if (flowerEl) {
+                    document.querySelector('.body').removeChild(flowerEl);
+                }
+                const inputValue = document.querySelector('.qa-inputer').value;
+                if (!inputValue) return;
+                const newFlower = document.createElement('div');
+                    newFlower.setAttribute('class', 'flower-box');
+                    newFlower.innerHTML = `
+                        <div class="flower">
+                            <div class="flower-body" id="flower-body">
+                                <div class="rhizome"></div>
+                                <div class="leaf_1"></div>
+                                <div class="leaf_2"></div>
+                                <div class="stamen"></div>
+                                <div class="thorn thorn_1"></div>
+                                <div class="thorn thorn_2"></div>
+                                <div class="thorn thorn_3"></div>
+                                <div class="thorn thorn_4"></div>
+                                <div class="petal petal_0"></div>
+                                <div class="petal-scope"></div>
+                                <div class="random-petal"></div>
+                            </div>
+                        </div>
+                    `;
+
+                document.querySelector('.body').appendChild(newFlower);
+
+                createFlower();
+            });
+        }
+    </script>
+</body>
+</html>

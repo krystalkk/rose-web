@@ -1,0 +1,138 @@
+body {
+    height: 100%;
+    background-color: rgba(245,148,184, .3);
+}
+.qa-box {
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+.flower-box, .qa-box {
+    text-align: center;
+}
+.qa-inputer {
+    width: 500px;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 4px;
+}
+.qa-enter {
+    border: none;
+    color: #fff;
+    padding: 10px 16px;
+    background-color: #d52d58;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.qa-inputer:focus {
+    border: 1px solid #d52d58;
+}
+.flower {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+}
+ 
+.flower-body {
+    position: relative;
+    height: 220px;
+}
+.rhizome {
+    width: 6px;
+    height: 210px;
+    background: #054c05;
+    border-radius: 0 0 100px 100px;
+}
+
+.leaf_1 {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px 40px 20px 40px;
+    background: #054c05;
+    transform-origin: bottom;
+    transform: rotate(-30deg);
+    top: 53px;
+    left: -24px;
+    box-shadow: inset 5px 5px #066406;
+}
+
+.leaf_2 {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    top: 120px;
+    right: -24px;
+    border-radius: 40px 5px 40px 20px;
+    background: #054c05;
+    transform-origin: bottom;
+    transform: rotate(30deg);
+    box-shadow: inset -5px 5px #066406;
+}
+
+.stamen {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #338f37;
+    top: -12px;
+    left: -12px;
+    border-radius: 50%;
+}
+.thorn {
+    position: absolute;
+}
+.thorn_1 {
+    top: 50px;
+}
+.thorn_3 {
+    top: 100px;
+}
+.thorn_1, .thorn_3 {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #054c05;
+    left: 5px;
+}
+.thorn_2 {
+    top: 70px;
+}
+.thorn_4 {
+    top: 120px;
+}
+.thorn_2, .thorn_4 {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #054c05;
+    left: -5px;
+}
+.petal-scope {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: -47px;
+    opacity: 0;
+    z-index: 100;
+    cursor: pointer;
+}
+.petal {
+    position: absolute;
+    width: 46px;
+    height: 80px;
+    background-color: #d52d58;
+    transition: all 1.5s ease-out;
+    box-shadow: 0px 0px 50px rgb(245 148 184 / 50%);
+    border: 1px solid rgb(245 148 184 / 50%);
+}
+.petal_0 {
+    z-index: 0;
+    left: -20px;
+    top: -50px;
+    border-radius: 100% 100% 50% 50%;
+    box-shadow: 0px 0px 30px #f594b8;
+}
