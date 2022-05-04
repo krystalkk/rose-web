@@ -2,6 +2,12 @@ body {
     height: 100%;
     background-color: rgba(245,148,184, .3);
 }
+p{
+    font-family: whisperfonts;
+    font-size: 45px;
+    color: indianred;
+
+}
 .qa-box {
     padding: 20px 0;
     margin-bottom: 50px;
@@ -136,3 +142,54 @@ body {
     border-radius: 100% 100% 50% 50%;
     box-shadow: 0px 0px 30px #f594b8;
 }
+.back{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.content{
+     color:darkred;
+     text-align: center;
+      position: absolute;
+      top: 30%;
+      left: 16%;
+      transform: translateY(-50%);
+      z-index: 2;
+}
+h1{
+    text-align: center;
+    font-family: rosefonts;
+    font-size: 40px;
+
+    }
+
+
+h2{
+    color: indianred;
+   text-align: center;
+   font-family: whisperfonts;
+   font-size: 25px;
+   }
+
+   h3{
+    color: indianred;
+   font-family: whisperfonts;
+   font-size: 25px;
+   }
+
+   @font-face{
+    font-family: rosefonts;
+    src: url(rosefonts.ttf);
+   }
+   @font-face{
+    font-family: whisperfonts;
+    src: url(whisper.ttf);
+     }
+
+
+
+
